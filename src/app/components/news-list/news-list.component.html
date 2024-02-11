@@ -1,10 +1,5 @@
-<div>
-    <button (click)="sendy('dark')">Dark theme</button>
-    <button (click)="sendy('light')">Light theme</button>
-    <button (click)="sendy('blue')">Blue theme</button>
-    <button>Update news</button>
-</div>
-<div *ngFor="let new of news" #newsbody>
-    <h1>{{new.title}}</h1>
-    <p>{{new.content}}</p>
+
+<div *ngFor="let newss of news" #newsbody>
+    <h1>{{newss.title}}</h1>
+    <p>{{newss.content}}</p>
 </div>
